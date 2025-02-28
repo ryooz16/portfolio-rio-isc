@@ -1,4 +1,5 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import './styles/styles.css';
 
 import Alpine from 'alpinejs';
 import AOS from 'aos';
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-import favicon from '/assests/img/logo-favicon.png';
+import favicon from '/assets/img/logo-favicon.png';
 
 const link = document.createElement('link');
 link.rel = 'icon';

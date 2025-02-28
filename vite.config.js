@@ -1,10 +1,12 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import path from 'path'; // Import modul path untuk mengatur alias
 
 export default defineConfig({
-  root: 'src', // Menentukan folder sumber utama
+  publicDir: 'public', // Menentukan folder public (untuk file static)
   build: {
-    outDir: '../dist', // Folder output untuk build hasil akhir
+    outDir: 'dist', // Folder output untuk build hasil akhir
     emptyOutDir: true, // Menghapus folder dist sebelum build
+    assetsDir: 'assets', // Folder untuk assets (CSS, gambar, dll.)
   },
   server: {
     open: true, // Membuka browser secara otomatis ketika server dijalankan
@@ -17,4 +19,9 @@ export default defineConfig({
       ],
     },
   },
-})
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'), // Alias untuk folder src
+    },
+  },
+});
