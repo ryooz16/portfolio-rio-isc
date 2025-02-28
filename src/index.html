@@ -152,22 +152,22 @@
         <div x-data="{ 
         currentIndex: 0, 
         projects: [
-            { img: '/assests/img/p1.png', title: 'Project 1', year: '2025', url: 'project1.html' },
-            { img: '/assests/img/p2.png', title: 'Project 2', year: '2025', url: 'project2.html' },
-            { img: '/assests/img/p3.png', title: 'Project 3', year: '2025', url: 'project3.html' },
-            { img: '/assests/img/p4.png', title: 'Project 4', year: '2025', url: 'project4.html' },
-            { img: '/assests/img/p5.png', title: 'Project 5', year: '2025', url: 'project5.html' },
-            { img: '/assests/img/p6.png', title: 'Project 6', year: '2025', url: 'project6.html' },
-            { img: '/assests/img/p7.png', title: 'Project 7', year: '2025', url: 'project7.html' },
-            { img: '/assests/img/p8.png', title: 'Project 8', year: '2025', url: 'project8.html' },
-            { img: '/assests/img/p9.png', title: 'Project 9', year: '2025', url: 'project9.html' }
+            { img: 'assests/img/p1.png', title: 'Project 1', year: '2025', url: 'project1.html' },
+            { img: 'assests/img/p2.png', title: 'Project 2', year: '2025', url: 'project2.html' },
+            { img: 'assests/img/p3.png', title: 'Project 3', year: '2025', url: 'project3.html' },
+            { img: 'assests/img/p4.png', title: 'Project 4', year: '2025', url: 'project4.html' },
+            { img: 'assests/img/p5.png', title: 'Project 5', year: '2025', url: 'project5.html' },
+            { img: 'assests/img/p6.png', title: 'Project 6', year: '2025', url: 'project6.html' },
+            { img: 'assests/img/p7.png', title: 'Project 7', year: '2025', url: 'project7.html' },
+            { img: 'assests/img/p8.png', title: 'Project 8', year: '2025', url: 'project8.html' },
+            { img: 'assests/img/p9.png', title: 'Project 9', year: '2025', url: 'project9.html' }
         ] 
     }">
 
             <!-- Grid Layout untuk Desktop -->
             <div class="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <template x-for="(project, index) in projects" :key="index">
-                    <a :href="project.url"
+                    <a :href="project.url" data-aos="fade-up"
                         class="relative flex flex-col w-full rounded-2xl overflow-hidden shadow-xl bg-white p-4 cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                         <img class="w-full h-72 object-cover transition duration-300 hover:brightness-75 rounded-xl"
                             :src="project.img" alt="Project Image">
