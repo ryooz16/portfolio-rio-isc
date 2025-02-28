@@ -11,9 +11,9 @@
 <body class="bg-white text-black">
     <!-- Navbar -->
     <nav x-data="{ isScrolled: false, isOpen: window.innerWidth >= 768 }" x-init="
-        window.addEventListener('scroll', () => { isScrolled = window.scrollY > 0; });
-        window.addEventListener('resize', () => { isOpen = window.innerWidth >= 768; });
-    " x-bind:class="{ 'shadow-md': isScrolled }"
+            window.addEventListener('scroll', () => { isScrolled = window.scrollY > 0; });
+            window.addEventListener('resize', () => { isOpen = window.innerWidth >= 768; });
+        " x-bind:class="{ 'shadow-md': isScrolled }"
         class="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-12 lg:px-28 py-3 sticky top-0 z-30 bg-white transition-all duration-300">
 
         <!-- Logo dan Menu Toggle -->
@@ -150,19 +150,19 @@
         <h2 class="text-2xl md:text-4xl font-bold text-center mb-10 md:mb-20 uppercase">My Project</h2>
 
         <div x-data="{ 
-        currentIndex: 0, 
-        projects: [
-            { img: 'assets/img/p1.png', title: 'Project 1', year: '2025', url: 'project1.html' },
-            { img: 'assets/img/p2.png', title: 'Project 2', year: '2025', url: 'project2.html' },
-            { img: 'assets/img/p3.png', title: 'Project 3', year: '2025', url: 'project3.html' },
-            { img: 'assets/img/p4.png', title: 'Project 4', year: '2025', url: 'project4.html' },
-            { img: 'assets/img/p5.png', title: 'Project 5', year: '2025', url: 'project5.html' },
-            { img: 'assets/img/p6.png', title: 'Project 6', year: '2025', url: 'project6.html' },
-            { img: 'assets/img/p7.png', title: 'Project 7', year: '2025', url: 'project7.html' },
-            { img: 'assets/img/p8.png', title: 'Project 8', year: '2025', url: 'project8.html' },
-            { img: 'assets/img/p9.png', title: 'Project 9', year: '2025', url: 'project9.html' }
-        ] 
-    }">
+            currentIndex: 0, 
+            projects: [
+                { img: 'assets/img/p1.png', title: 'Project 1', year: '2025', url: 'project1.html' },
+                { img: 'assets/img/p2.png', title: 'Project 2', year: '2025', url: 'project2.html' },
+                { img: 'assets/img/p3.png', title: 'Project 3', year: '2025', url: 'project3.html' },
+                { img: 'assets/img/p4.png', title: 'Project 4', year: '2025', url: 'project4.html' },
+                { img: 'assets/img/p5.png', title: 'Project 5', year: '2025', url: 'project5.html' },
+                { img: 'assets/img/p6.png', title: 'Project 6', year: '2025', url: 'project6.html' },
+                { img: 'assets/img/p7.png', title: 'Project 7', year: '2025', url: 'project7.html' },
+                { img: 'assets/img/p8.png', title: 'Project 8', year: '2025', url: 'project8.html' },
+                { img: 'assets/img/p9.png', title: 'Project 9', year: '2025', url: 'project9.html' }
+            ] 
+        }">
 
             <!-- Grid Layout untuk Desktop -->
             <div class="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -320,8 +320,8 @@
 
             <!-- Direct Message (40%) -->
             <div class="w-full md:w-[40%] bg-white p-8 rounded-3xl">
-                <h3 class="text-2xl text-center md:text-start font-bold mb-6" data-aos="fade-left">Direct Message</h3>
-                <p class="text-gray-600 mb-8 text-center md:text-start" data-aos="fade-left" data-aos-delay="100">
+                <h3 class="text-2xl text-center md:text-start font-bold mb-6" data-aos="fade-up">Direct Message</h3>
+                <p class="text-gray-600 mb-8 text-center md:text-start" data-aos="fade-up" data-aos-delay="100">
                     Chat me directly via social media:
                 </p>
 
@@ -329,7 +329,7 @@
                     <!-- Instagram -->
                     <a href="https://instagram.com" target="_blank"
                         class="flex items-center gap-4 p-4 border-2 border-pink-500 rounded-[2em] hover:bg-pink-50 transition-colors group"
-                        data-aos="fade-left" data-aos-delay="200">
+                        data-aos="fade-up" data-aos-delay="200">
                         <i class="fab fa-instagram text-3xl text-pink-600 group-hover:text-pink-700"></i>
                         <div>
                             <h4 class="font-bold">Instagram DM</h4>
@@ -340,7 +340,7 @@
                     <!-- LinkedIn -->
                     <a href="https://linkedin.com" target="_blank"
                         class="flex items-center gap-4 p-4 border-2 border-blue-600 rounded-[2em] hover:bg-blue-50 transition-colors group"
-                        data-aos="fade-left" data-aos-delay="300">
+                        data-aos="fade-up" data-aos-delay="300">
                         <i class="fab fa-linkedin text-3xl text-blue-700 group-hover:text-blue-800"></i>
                         <div>
                             <h4 class="font-bold">LinkedIn Message</h4>
@@ -351,7 +351,7 @@
                     <!-- X (Twitter) -->
                     <a href="https://twitter.com" target="_blank"
                         class="flex items-center gap-4 p-4 border-2 border-black rounded-[2em] hover:bg-gray-100 transition-colors group"
-                        data-aos="fade-left" data-aos-delay="400">
+                        data-aos="fade-up" data-aos-delay="400">
                         <i class="fab fa-x-twitter text-3xl group-hover:text-gray-800"></i>
                         <div>
                             <h4 class="font-bold">X Direct Message</h4>
